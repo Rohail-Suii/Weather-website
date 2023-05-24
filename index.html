@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather</title>
 </head>
 <body>
@@ -20,11 +21,24 @@
             <form action="weather.php" method="get">
                 <input type="text" name="city" placeholder="City">
                 <input type="text" name="country" placeholder="Country">
-                <button type="submit" name="submit">Submit</button>
+                <button type="submit" name="submit" class="submit_btn">Submit</button>
             </form>
         </div>
-        
+        <aside>
+            <div class="weatherpic">
+                <img src="imgs/clear.png" alt="icon" class="weatherimg"> 
+            </div>
+            <div class="weatherdata">
+                <h1 class="date">12</h1>
+                <h1 class="temp">13<span>&deg;</span></h1>
+                <h1 class="city">lahore</h1>
+                <h1 class="country">Pakistan</h1>
+                <h1 class="description">Cloudy</h1>
+            </div>
+            
+        </aside>
     </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
