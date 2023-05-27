@@ -61,11 +61,18 @@ body{
     transition: .3s;
 }
 .weather-img{
-    width: 40%;
+    width: 20%;
+    height: 40%;
+}
+.location-not-found img{
+    
+    width: 70%;
     height: 60%;
 }
 .location-not-found{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
 }
 .main{
     display: flex;
@@ -78,22 +85,31 @@ body{
     margin-left: 5%;
 }
 .weather-body{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 2%;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
 .weather-box{
+    /* background-color: #332; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 100%; */
     align-items: center;
 } 
 .weather-details{
+    /* background-color: #333; */
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
+
 .wind{
-    padding: 2%;
-}
+    margin-left: 10%;
+    /* width: 100px; */
+} 
