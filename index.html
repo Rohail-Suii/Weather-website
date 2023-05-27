@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App With JavaScript</title>
     <link rel="stylesheet" href="style.css">
-    <title>Weather</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <div class="searchbar">
-            <h1>Weather</h1>
-            <form action="weather.php" method="get">
-                <input type="text" name="city" placeholder="City">
-                <input type="text" name="country" placeholder="Country">
-                <button type="submit" name="submit" class="submit_btn">Submit</button>
-            </form>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
         </div>
-        <aside>
-            <div class="weatherpic">
-                <img src="imgs/clear.png" alt="icon" class="weatherimg"> 
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
             </div>
-            <div class="weatherdata">
-                <h1 class="date">12</h1>
-                <h1 class="temp">13<span>&deg;</span></h1>
-                <h1 class="city">lahore</h1>
-                <h1 class="country">Pakistan</h1>
-                <h1 class="description">Cloudy</h1>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
             </div>
-            
-        </aside>
-    </main>
-    
-    <script src="script.js"></script>
+        </div>
+    </div>
+
+
+    <script src="scripttest.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
 </body>
 </html>
